@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorAccent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="FRAMS"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/Black"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="80dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <Button
+            android:id="@+id/main_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="15dp"
+            android:layout_marginVertical="10dp"
+            android:text="Add Attendance"
+            android:textColor="@color/Black"
+
+            android:paddingHorizontal="20dp"/>
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/main_door"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="15dp"
+            android:text="Door\n Locked/ UnLocked"
+            android:layout_marginVertical="10dp"
+            android:textColor="@color/Black"
+            android:paddingHorizontal="20dp"/>
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/main_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="15dp"
+            android:layout_marginVertical="10dp"
+            android:text="Show Attendnace"
+            android:textColor="@color/Black"
+            android:paddingHorizontal="20dp"/>
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/main_logout"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="15dp"
+            android:text="Logout"
+            android:textColor="@color/Black"
+            android:paddingHorizontal="20dp"/>
+
+    </LinearLayout>
+</LinearLayout>
